@@ -1,0 +1,38 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="200"
+     height="200"
+     viewBox="0 0 200 200"
+     xmlns="http://www.w3.org/2000/svg">
+  <!-- House outline -->
+  <path d="M100,30 L30,90 L30,160 L170,160 L170,90 Z"
+        fill="none"
+        stroke="black"
+        stroke-width="5" />
+
+  <!-- Connecting lines inside the house to represent shared collaboration -->
+  <line x1="100" y1="30" x2="100" y2="160"
+        stroke="black"
+        stroke-width="2" />
+  <line x1="30" y1="90" x2="170" y2="90"
+        stroke="black"
+        stroke-width="2" />
+  <line x1="30" y1="160" x2="170" y2="90"
+        stroke="black"
+        stroke-width="2" />
+  <line x1="170" y1="160" x2="30" y2="90"
+        stroke="black"
+        stroke-width="2" />
+
+  <!-- Node circles at key points -->
+  <!-- Roof peak -->
+  <circle cx="100" cy="30" r="6" fill="black" />
+  <!-- Upper corners -->
+  <circle cx="30" cy="90" r="6" fill="black" />
+  <circle cx="170" cy="90" r="6" fill="black" />
+  <!-- Lower corners -->
+  <circle cx="30" cy="160" r="6" fill="black" />
+  <circle cx="170" cy="160" r="6" fill="black" />
+  <!-- Center node (symbolizing shared space and community) -->
+  <circle cx="100" cy="95" r="5" fill="black" />
+</svg>

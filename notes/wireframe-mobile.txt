@@ -1,0 +1,24 @@
+---------------------------------
+| House of Nodes (Logo/Menu)    |
+---------------------------------
+| 🚀 Hero Section               |
+| - Big Title                   |
+| - Subtitle                     |
+| - Call-to-Action Button       |
+---------------------------------
+| 🔹 About Section              |
+| - Short Description           |
+| - "Learn More" Button         |
+---------------------------------
+| ⭐ Features                   |
+| - 3 Key Benefits (Icons)      |
+---------------------------------
+| 🛠 Partners / Clients         |
+| - Logos or Testimonials       |
+---------------------------------
+| 📢 Call to Action             |
+| - "Join Now" Button           |
+---------------------------------
+| 📩 Footer                     |
+| - Contact / Social Links      |
+---------------------------------

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Nodes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            background: #444;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            padding-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            padding: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background: #666;
+        }
+
+        /* Submenu Styling */
+        nav ul ul {
+            display: none;
+            padding-left: 20px;
+        }
+
+        nav ul li:hover>ul {
+            display: block;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 260px;
+            width: calc(100% - 260px);
+            padding: 20px;
+        }
+
+        header,
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .section {
+            padding: 40px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href="members.html">Members (login)</a>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li>
+                        <a href="#">Knowledge</a>
+                        <ul>
+                            <li><a href="#">Subject</a></li>
+                            <li><a href="#">Standalone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Help (members)</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="admin.html">Admin (login)</a>
+                <ul>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#">New Registrations (for approval)</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <header>
+            <img src="media/logoHoN.svg" alt="House of Nodes Logo" class="logo">
+            <h1>Welcome to House of Nodes</h1>
+            <p>Your Place, Your Business, Your Future</p>
+        </header>
+
+        <div class="container">
+            <h2>Who we are</h2>
+            <p>House of Nodes, also known as <strong>Node House</strong>, is a cooperative designed to support
+                individuals,
+                creatives, and groups who face financial difficulties and find themselves excluded from conventional
+                financial systems.</p>
+
+            <h2>Our Mission</h2>
+            <p>At <strong>House of Nodes</strong>, we believe in inclusion and in providing opportunities for those who,
+                for
+                various reasons, cannot access personal loans, business loans, or financing for their own homes and
+                families.</p>
+            <p>We live in a society that often marginalizes those who do not fit the traditional financial stability
+                parameters. These individuals may have faced failed investments, unfortunate circumstances, or simply do
+                not
+                meet standard credit criteria. As a result, they find themselves trapped in a cycle of expensive
+                rentals,
+                financial instability, and social exclusion.</p>
+            <p><strong>However, many of these individuals possess valuable skills, determination, and the ability to
+                    create
+                    jobs for themselves and others.</strong> House of Nodes exists to provide an environment where they
+                can
+                develop their potential and rebuild their financial and social stability.</p>
+
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Financial Management:</strong> Invoicing, issuance of legal receipts, and tax compliance.
+                </li>
+                <li><strong>Rent-to-own schemes:</strong> Based on the cooperative's creditworthiness.</li>
+                <li><strong>Business Networking:</strong> Establishing formal relationships between customers and
+                    suppliers
+                    within the House of Nodes network.</li>
+            </ul>
+
+            <h2>Our Vision</h2>
+            <p>We aim to be a <strong>refuge and a platform for growth</strong> for talented individuals who need an
+                opportunity to showcase their value. At <strong>House of Nodes</strong>, we not only provide financial
+                and
+                structural support but also foster collaboration and the development of a community where each member
+                can
+                contribute and benefit.</p>
+            <p><strong>If you have skills, talent, and determination, but circumstances have placed you in a difficult
+                    situation, House of Nodes is your place to start anew.</strong></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 House of Nodes - Building Opportunities for Everyone.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

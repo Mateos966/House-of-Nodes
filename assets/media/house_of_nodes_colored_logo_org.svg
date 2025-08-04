@@ -1,0 +1,51 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="200"
+     height="200"
+     viewBox="0 0 200 200"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Define gradients for the house outline and lines -->
+  <defs>
+    <!-- Gradient for the house outline -->
+    <linearGradient id="houseGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D94F70"/>
+      <stop offset="100%" stop-color="#F3A954"/>
+    </linearGradient>
+    <!-- Gradient for the internal lines -->
+    <linearGradient id="linesGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FD970"/>
+      <stop offset="100%" stop-color="#54AAF3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- House outline (stroke uses houseGradient) -->
+  <path d="M100,30 L30,90 L30,160 L170,160 L170,90 Z"
+        fill="none"
+        stroke="url(#houseGradient)"
+        stroke-width="5" />
+
+  <!-- Connecting lines inside the house (stroke uses linesGradient) -->
+  <line x1="100" y1="30" x2="100" y2="160"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+  <line x1="30" y1="90" x2="170" y2="90"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+  <line x1="30" y1="160" x2="170" y2="90"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+  <line x1="170" y1="160" x2="30" y2="90"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+
+  <!-- Node circles at key points (all the same color) -->
+  <circle cx="100" cy="30" r="6" fill="#6D3FC0" />
+  <circle cx="30"  cy="90" r="6" fill="#6D3FC0" />
+  <circle cx="170" cy="90" r="6" fill="#6D3FC0" />
+  <circle cx="30"  cy="160" r="6" fill="#6D3FC0" />
+  <circle cx="170" cy="160" r="6" fill="#6D3FC0" />
+  <!-- Center node (symbolizing shared space and community) -->
+  <circle cx="100" cy="95" r="5" fill="#6D3FC0" />
+
+</svg>

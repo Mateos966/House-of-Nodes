@@ -1,0 +1,16 @@
+Here is the wireframe:
+
+*
+**Logo in the top-left corner
+**Title: HoN Site Overview
+**Navigation menu on the left with: 
+***Home, 
+***About, 
+***Blog, 
+***Registration, 
+***Members (login), 
+***Admin (login), and 
+***Help
+**Main content area with a General Description
+**Footer containing copyright information and social media links
+*

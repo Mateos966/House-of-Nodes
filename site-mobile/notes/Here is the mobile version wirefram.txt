@@ -1,0 +1,7 @@
+Here is the mobile version wireframe of the HoN Site Overview:
+
+*Centered logo at the top
+*Title: HoN Site Overview
+*Navigation menu as a vertical list for easy mobile access
+*Main content area with General Description
+*Footer with copyright and social media links

@@ -1,0 +1,91 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="220"
+     height="220"
+     viewBox="0 0 220 220"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!--
+    This design builds on the earlier House of Nodes concept:
+    - The house shape and internal lines show the cooperative structure and collaboration.
+    - The human figure in the center symbolizes a focus on humanity and personal empowerment.
+    - The four small circles around the figure represent the four Stoic virtues:
+      1) Wisdom,   2) Courage,
+      3) Justice,  4) Temperance
+    - Gradients add a vibrant, “alive” feel, while the overall shape is clean and symbolic.
+  -->
+
+  <!-- Define gradients -->
+  <defs>
+    <!-- Gradient for the house outline -->
+    <linearGradient id="houseGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D94F70"/>
+      <stop offset="100%" stop-color="#F3A954"/>
+    </linearGradient>
+
+    <!-- Gradient for the internal lines -->
+    <linearGradient id="linesGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FD970"/>
+      <stop offset="100%" stop-color="#54AAF3"/>
+    </linearGradient>
+
+    <!-- Gradient for the central figure -->
+    <radialGradient id="humanGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6D3FC0"/>
+      <stop offset="100%" stop-color="#B06FFB"/>
+    </radialGradient>
+  </defs>
+
+  <!-- House outline -->
+  <path d="M110,30 L40,90 L40,170 L180,170 L180,90 Z"
+        fill="none"
+        stroke="url(#houseGradient)"
+        stroke-width="5" />
+
+  <!-- Internal connecting lines (representing collaboration) -->
+  <line x1="110" y1="30" x2="110" y2="170"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+  <line x1="40"  y1="90" x2="180" y2="90"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+  <line x1="40"  y1="170" x2="180" y2="90"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+  <line x1="180" y1="170" x2="40"  y2="90"
+        stroke="url(#linesGradient)"
+        stroke-width="2" />
+
+  <!-- Center silhouette (human figure) -->
+  <!-- A simple shape to suggest a head, arms, and body -->
+  <path d="M110,105
+           c 6,0  11,-5  11,-11  0,-6 -5,-11 -11,-11  -6,0 -11,5 -11,11  0,6 5,11 11,11
+           v 5
+           c -4,0 -7,3 -7,7
+           v 14
+           c 0,3 4,3 4,0
+           v -11
+           h 6
+           v 11
+           c 0,3 4,3 4,0
+           v -14
+           c 0,-4 -3,-7 -7,-7
+           z"
+        fill="url(#humanGradient)" />
+
+  <!-- Four small circles around the figure to symbolize Stoic virtues -->
+  <!-- (Positions arranged in a diamond shape around the silhouette) -->
+
+  <!-- Wisdom (top) -->
+  <circle cx="110" cy="75" r="4" fill="#6D3FC0" />
+
+  <!-- Courage (right) -->
+  <circle cx="125" cy="90" r="4" fill="#6D3FC0" />
+
+  <!-- Justice (bottom) -->
+  <circle cx="110" cy="105" r="4" fill="#6D3FC0" />
+
+  <!-- Temperance (left) -->
+  <circle cx="95" cy="90" r="4" fill="#6D3FC0" />
+
+</svg>

@@ -1,0 +1,8 @@
+targetFileName: 
+targetPath: 
+targetSourceFormat: markdown
+targetFormat: html
+targetTemplate:
+sources: 
+    - sources/\<chapterFileName\>.md
+    

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HoN Site Overview</title>
+    <style>
+        /* Basic margin and padding reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Main title (HoN Site Overview) */
+        .main-title {
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 1rem 0;
+        }
+
+        .cta-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkorange;
+            color: white;
+        }
+
+        nav,
+        main,
+        footer {
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Nav button/section */
+        .home-btn,
+        .blog-btn,
+        .members-btn,
+        .admin-btn,
+        .help-btn {
+            display: block;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* About section and main content */
+        .about-section {
+            border-top: 2px solid #ccc;
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+            background-color: #fff;
+        }
+
+        .about-section h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .about-list a {
+            display: block;
+            padding: 1rem;
+            border: 1px solid #eee;
+            margin: 1rem;
+            text-decoration: none;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+
+        /* Help section */
+        .help-section {
+            display: block;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            text-align: center;
+            border-top: 2px solid #ccc;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .social-media a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with LOGO and main title -->
+    <header>
+        <div class="logo">
+            <!-- The logo redirects to the home page -->
+            <a href="index.html">
+                <img src="media/logoHoN.svg" alt="House of Nodes Logo">
+            </a>
+        </div>
+        <h1>House of Nodes</h1>
+    </header>
+
+    <!-- Optional additional title -->
+    <!-- <h2 class="main-title">HoN Site Overview</h2> -->
+    <h2 class="main-title">Building the Future with Decentralized Networks</h2>
+    <div>
+        <a href="registration.html" class="cta-button">Join Us</a>
+    </div>
+
+    <!-- Home button/section -->
+    <nav>
+        <a href="index.html" class="home-btn">Home</a>
+    </nav>
+
+    <!-- About section and main content -->
+    <main>
+        <section class="about-section">
+            <div class="about-list">
+                <h2>About</h2>
+                <p>House of Nodes is dedicated to decentralized networks and the future of blockchain technology.</p>
+
+                <h2>Why Choose Us?</h2>
+                <p>We provide cutting-edge decentralized solutions for a secure and connected future.</p>
+            </div>
+        </section>
+
+        <nav>
+            <a href="blog.html" class="blog-btn">Blog</a>
+        </nav>
+        <nav>
+            <a href="members.html" class="members-btn">Members (login)</a>
+        </nav>
+        <nav>
+            <a href="admin.html" class="admin-btn">Admin (login)</a>
+        </nav>
+
+
+        <!-- Help section -->
+        <nav>
+            <a href="help.html" class="help-btn">Help</a>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 HoN - All Rights Reserved</p>
+        <p class="social-media">
+            <a href="#">Social Media Links</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

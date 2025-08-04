@@ -1,0 +1,197 @@
+/* Base Styles */
+body {
+  font-family: var(--font-base);
+  line-height: 1.6;
+  font-size: clamp(var(--body-font-size-min), var(--body-font-size-ideal), var(--body-font-size-max));
+  margin: clamp(var(--space-min), var(--space-ideal), var(--space-max));
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: clamp(var(--space-min), var(--space-ideal), var(--space-max));
+  margin-bottom: clamp(0.5em, 1vw, 1em);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(var(--h1-min), var(--h1-ideal), var(--h1-max));
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: clamp(0.3em, 1vw, 0.5em);
+}
+
+h2 {
+  font-size: clamp(var(--h2-min), var(--h2-ideal), var(--h2-max));
+  border-bottom: 1px solid var(--color-border-light);
+  padding-bottom: clamp(0.3em, 1vw, 0.5em);
+}
+
+h3 {
+  font-size: clamp(var(--h3-min), var(--h3-ideal), var(--h3-max));
+}
+
+h4 {
+  font-size: clamp(var(--h4-min), var(--h4-ideal), var(--h4-max));
+}
+
+h5 {
+  font-size: clamp(var(--h5-min), var(--h5-ideal), var(--h5-max));
+}
+
+h6 {
+  font-size: clamp(var(--h6-min), var(--h6-ideal), var(--h6-max));
+  color: var(--color-h6);
+}
+
+/* Paragraphs */
+p {
+  margin: clamp(1em, 1.5vw, 2em) 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--color-blockquote-border);
+  margin: clamp(1em, 1.5vw, 2em) 0;
+  padding-left: clamp(1em, 1.5vw, 2em);
+  color: var(--color-secondary-text);
+}
+
+/* Code Blocks and Inline Code */
+pre, code {
+  font-family: var(--font-monospace);
+  background: var(--color-code-background);
+  padding: clamp(0.2em, 0.5vw, 0.4em);
+  border-radius: 3px;
+}
+
+pre {
+  padding: clamp(1em, 2vw, 1.5em);
+  overflow: auto;
+}
+
+/* Lists */
+ul, ol {
+  margin: clamp(1em, 1.5vw, 2em) 0;
+  padding-left: clamp(2em, 3vw, 4em);
+}
+
+li {
+  margin: clamp(0.5em, 1vw, 1em) 0;
+}
+
+/* Definition Lists */
+dl {
+  margin: clamp(1em, 1.5vw, 2em) 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: clamp(1em, 1.5vw, 2em);
+}
+
+dd {
+  margin-left: clamp(2em, 3vw, 4em);
+  margin-bottom: clamp(1em, 1.5vw, 2em);
+}
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: clamp(2em, 2vw, 3em) 0;
+}
+
+/* Links */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: clamp(1em, 1.5vw, 2em) 0;
+}
+
+table, th, td {
+  border: 1px solid var(--color-border);
+}
+
+th, td {
+  padding: clamp(0.5em, 1vw, 1em);
+  text-align: left;
+}
+
+thead {
+  background-color: var(--color-thead-bg);
+}
+
+/* Images and Figures */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: clamp(1em, 1.5vw, 2em) 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: clamp(0.9em, 1vw, 1.1em);
+  color: var(--color-secondary-text);
+}
+
+/* Footnotes */
+div.footnotes {
+  border-top: 1px solid var(--color-border);
+  padding-top: clamp(1em, 1.5vw, 2em);
+  font-size: clamp(0.9em, 1vw, 1.1em);
+}
+
+div.footnotes ol {
+  padding-left: clamp(1.2em, 1.5vw, 2em);
+}
+
+div.footnotes li {
+  margin-bottom: clamp(0.5em, 1vw, 1em);
+}
+
+/* Details and Summary */
+details {
+  margin: clamp(1em, 1.5vw, 2em) 0;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Inline Code Spans */
+span.code {
+  background: var(--color-code-background);
+  padding: clamp(0.2em, 0.5vw, 0.4em);
+  border-radius: 3px;
+}
+
+/* Special Pandoc Classes */
+.titlepage {
+  text-align: center;
+  margin-top: clamp(2em, 2vw, 3em);
+}
+
+.abstract {
+  font-style: italic;
+  margin: clamp(1em, 1.5vw, 2em) 0;
+  border: 1px solid var(--color-abstract-border);
+  padding: clamp(1em, 1.5vw, 2em);
+  background-color: var(--color-abstract-bg);
+}
